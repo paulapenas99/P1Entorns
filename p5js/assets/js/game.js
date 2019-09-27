@@ -33,16 +33,17 @@ function getAtributes() {
 }
 
 function preload(){
-    cont = -1;
-    getAtributes();
-    paint = false;
-    colors_n = [color('#FF9AA2'),color('#FFB7B2'),color('#FFDAC1'),color('#E2F0CB'),color('#B5EAD7'),color('#C7CEEA'),color('#50B89F'),color('#965A3E'),color('#2928FF'),color('#97FFFF')];
-    colors_c = [color('#FE0000'),color('#FDFE02'),color('#0BFF01'),color('#011EFE'),color('#FE00F6'),color('#830303'),color('#FF00A9'),color('#00ABA9'),color('#A200FF'),color('#008000')];
+    
 }
 
 // p5.js functions
 // --------------------------
 function setup() {
+    cont = -1;
+    getAtributes();
+    paint = false;
+    colors_n = [color('#FF9AA2'),color('#FFB7B2'),color('#FFDAC1'),color('#E2F0CB'),color('#B5EAD7'),color('#C7CEEA'),color('#50B89F'),color('#965A3E'),color('#2928FF'),color('#97FFFF')];
+    colors_c = [color('#FE0000'),color('#FDFE02'),color('#0BFF01'),color('#011EFE'),color('#FE00F6'),color('#830303'),color('#FF00A9'),color('#00ABA9'),color('#A200FF'),color('#008000')];
     var myCanvas = createCanvas(800, 600);
     myCanvas.parent("numbers");
     background(125,125,125);
