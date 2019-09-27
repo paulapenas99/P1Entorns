@@ -357,5 +357,5 @@ function mouseClicked() {
 }
 
 function deviceShaken() {
-    window.location.href ="https://github.com/paulapenas99/P1Entorns/p5js/";
+    window.location.href ="https://paulapenas99.github.io/P1Entorns/p5js/";
 }
