@@ -53,10 +53,10 @@ function setup() {
     angle = -3.12;
     r=200;
     step = TWO_PI/24;
+    frameRate(velCercle);
 }
 
 function draw() {
-    frameRate(velCercle);
     if (cont > 0 && cont < 25){
         if(paint){
             rand = int(random(0,10));
