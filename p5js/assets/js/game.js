@@ -53,7 +53,7 @@ function setup() {
     angle = -3.12;
     r=200;
     step = TWO_PI/24;
-    frameRate(velCercle);
+    frameRate(int(velCercle));
 }
 
 function draw() {
