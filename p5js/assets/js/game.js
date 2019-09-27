@@ -357,6 +357,5 @@ function mouseClicked() {
 }
 
 function deviceShaken() {
-    background-color: blue;
     window.history.back();
 }
