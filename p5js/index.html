@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Number Generator</title>
+    <script src="assets/js/jquery-3.3.1.js"></script>
+	<!--<script src="../Json/json.json"></script>-->
+    <script src="assets/js/p5.js"></script>
+    <script src="assets/js/index.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!--Títol-->
+    <div>
+        <h1 class="title">Number Generator</h1>
+    </div>
+
+    <div class="range">
+        Velocity: <input id="range" type="range" value="5" onchange="showVal(this.value)" step="1" min="1" max="20"><p id="inputRange"></p>
+    </div>
+
+
+    <!--Numeros imatges-->
+    <div class="buttons">
+        <button class="column" onclick="get_number(1)">
+            <img src="assets/images/1.png">
+        </button>
+        <button class="column2" onclick="get_number(2)">
+            <img src="assets/images/2.png">
+        </button>
+        <button class="column" onclick="get_number(3)">
+            <img src="assets/images/3.png">
+        </button>
+        <button class="column2" onclick="get_number(4)">
+            <img src="assets/images/4.png">
+        </button>
+    </div>
+
+</body>
+</html>

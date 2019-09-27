@@ -1,0 +1,67 @@
+@font-face {
+    /*font-family: myFont;*/
+    /*src: url(../fonts/font1.TTF);*/
+}
+
+body{
+
+}
+
+div{
+
+}
+
+h1{
+
+}
+
+h2{
+
+}
+
+img{
+    height: 200px;
+    width: 150px;
+}
+
+.column {
+    float: left;
+    width: 40%;
+}
+
+.column2 {
+    float: left;
+    width: 40%;
+}
+
+button{
+    /*height: 10%;*/
+    /*width: 40%;*/
+    display: block;
+    /*text-align: center;*/
+    /*font-size: 50%;*/
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-left: 7%;
+}
+
+.title{
+    text-align: center;
+}
+
+.range{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+#range{
+    float: none;
+    display: inline-block;
+}
+
+#inputRange{
+    float: none;
+    display: inline-block;
+    font-size: 20px;
+}
