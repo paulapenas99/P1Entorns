@@ -39,6 +39,7 @@ function setup() {
     colors_c = [color('#FE0000'),color('#FDFE02'),color('#0BFF01'),color('#011EFE'),color('#FE00F6'),color('#830303'),color('#FF00A9'),color('#00ABA9'),color('#A200FF'),color('#008000')];
     var myCanvas = createCanvas(800, 600);
     myCanvas.parent("numbers");
+    background(125,125,125);
     stroke(0);
     strokeWeight(10);
     fill(0);
