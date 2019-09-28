@@ -1,19 +1,16 @@
+//declaració de variables
 let num;
 var angle;
 var step;
 var r;
 var velCercle;
-
-// Game variables
-// --------------------------
-let squares = [];
 let cont;
 let paint;
 let colors_n = [];
 let colors_c = [];
 let c, col, rand;
 
-// Game functions
+// Funció que agafa el valor del numero i la velocitat de la url 
 function getAtributes() {
     var getUrlParameter = function getUrlParameter(sParam) {
         var sPageURL = window.location.search.substring(1),
@@ -32,12 +29,8 @@ function getAtributes() {
     velCercle = getUrlParameter('vel');
 }
 
-function preload(){
-    
-}
-
 // p5.js functions
-// --------------------------
+// Inicialitza tots els valors, les arrays de color i estableix on comença i quans cercles ha de dibuixar, a mes del frameRate
 function setup() {
     cont = -1;
     getAtributes();
@@ -46,7 +39,6 @@ function setup() {
     colors_c = [color('#FE0000'),color('#FDFE02'),color('#0BFF01'),color('#011EFE'),color('#FE00F6'),color('#830303'),color('#FF00A9'),color('#00ABA9'),color('#A200FF'),color('#008000')];
     var myCanvas = createCanvas(800, 600);
     myCanvas.parent("numbers");
-    background(125,125,125);
     stroke(0);
     strokeWeight(10);
     fill(0);
@@ -55,7 +47,7 @@ function setup() {
     step = TWO_PI/24;
     frameRate(int(velCercle));
 }
-
+//A partir del comptador estableix el número que ha de dibuixar, hi si l'ha de pintar o no
 function draw() {
     if (cont > 0 && cont < 25){
         if(paint){
@@ -91,7 +83,7 @@ function draw() {
     cont++;
 }
 
-
+//Dibuixa tots els cercles, un per un i quan acaba estableix que els següents seran pintats
 function cercle() {
     translate(width/2,height/2);
     var x = r * sin(angle);
@@ -103,7 +95,7 @@ function cercle() {
         paint = true;
     }
 }
-
+//Dibuixa el número 1, amb rectanges, primer de dos en dos i llavors de un en un
 function create1() {
     switch (cont) {
         case 1:
@@ -175,6 +167,7 @@ function create1() {
     }
 
 }
+//Dibuixa el número 2, amb rectanges de un en un
 function create2() {
     switch (cont) {
         case 1:
@@ -228,9 +221,9 @@ function create2() {
         case 17:
             rect(462, 425, 30, 10);
             break;
-
     }
 }
+//Dibuixa el número 3, amb rectanges de un en un
 function create3() {
     switch (cont) {
         case 1:
@@ -286,6 +279,7 @@ function create3() {
             break;
     }
 }
+//Dibuixa el número 4, amb rectanges 
 function create4() {
     switch (cont) {
         case 1:
@@ -352,11 +346,11 @@ function create4() {
             break;
     }
 }
-
+//Estableix que quan es clica el ratolí, en la pantalla de l'animació torna enrere, primera pantalla
 function mouseClicked() {
     window.history.back();
 }
-
+//Quan es fa shake amb el mobil torna a la pantalla anterior, es a dir la principal
 function deviceShaken() {
     window.location.href ="https://paulapenas99.github.io/P1Entorns/p5js/";
 }
